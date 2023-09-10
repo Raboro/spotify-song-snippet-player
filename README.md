@@ -1,4 +1,6 @@
-# Spotify-Song-Snippet-Player
+# Spotify-Song-Snippet-Player 
+
+[![CI](https://github.com/Raboro/spotify-song-snippet-player/actions/workflows/build.yml/badge.svg)](https://github.com/Raboro/spotify-song-snippet-player/actions/workflows/build.yml)
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Raboro_spotify-song-snippet-player&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Raboro_spotify-song-snippet-player)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=Raboro_spotify-song-snippet-player&metric=coverage)](https://sonarcloud.io/summary/new_code?id=Raboro_spotify-song-snippet-player)
