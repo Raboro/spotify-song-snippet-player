@@ -40,6 +40,7 @@ public class MainWindow extends JFrame {
 
     private void addContent() {
         mainPanel.add(constructSettingsElement(), BorderLayout.NORTH);
+        mainPanel.add(new InputComponent(), BorderLayout.CENTER);
     }
 
     private Component constructSettingsElement() {
