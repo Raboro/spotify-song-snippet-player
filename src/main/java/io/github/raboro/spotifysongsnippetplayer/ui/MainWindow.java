@@ -1,5 +1,8 @@
 package io.github.raboro.spotifysongsnippetplayer.ui;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
@@ -10,6 +13,7 @@ import java.awt.event.MouseEvent;
  */
 public class MainWindow extends JFrame {
 
+    private static final Logger LOGGER = LogManager.getLogger(MainWindow.class);
     private final JPanel mainPanel;
 
     public MainWindow() {
@@ -28,13 +32,13 @@ public class MainWindow extends JFrame {
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         } catch (ClassNotFoundException e) {
-            System.out.println("Class was not found");
+            LOGGER.error("Class was not found");
         } catch (InstantiationException e) {
-            System.out.println("Instantiation issue");
+            LOGGER.error("Instantiation issue");
         } catch (IllegalAccessException e) {
-            System.out.println("Could not be accessed");
+            LOGGER.error("Could not be accessed");
         } catch (UnsupportedLookAndFeelException e) {
-            System.out.println("Look and feel is not supported");
+            LOGGER.error("Look and feel is not supported");
         }
     }
 
@@ -48,7 +52,7 @@ public class MainWindow extends JFrame {
         panel.add(new SettingsLabel(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                System.out.println(e);
+                LOGGER.info(e);
             }
         }));
         return panel;
